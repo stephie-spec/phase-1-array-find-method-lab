@@ -1,10 +1,10 @@
-function superbowlWin(games) {
-  const winningGame = games.find(function(game) {
-    return game.result === "W";
+function superbowlWin(records) {
+  const winningRecord = records.find(function(record) {
+    return record.result === "W";
   });
   
-  if (winningGame) {
-    return winningGame.year;
+  if (winningRecord) {
+    return winningRecord.year;
   } else {
     return undefined;
   }
